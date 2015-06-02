@@ -10,7 +10,7 @@
 (ns whetstones-clj.potd.integer-humanize
   (:require [whetstones-clj.utils :refer :all]))
 
-(def- ones
+(def ones
   {"0" ""
    "1" "one"
    "2" "two"
@@ -22,7 +22,7 @@
    "8" "eight"
    "9" "nine"})
 
-(def- teens
+(def teens
   {"11" "eleven"
    "12" "twelve"
    "13" "thirteen"
@@ -33,7 +33,7 @@
    "18" "eighteen"
    "19" "nineteen"})
 
-(def- tens
+(def tens
   {"1" "ten"
    "2" "twenty"
    "3" "thirty"
@@ -44,14 +44,14 @@
    "8" "eighty"
    "9" "ninety"})
 
-(def- digit-group
+(def digit-group
   {1 "thousand"
    2 "million"
    3 "billion"
    4 "trillion"
    5 "quadrillion"})
 
-(defn- numeral->english
+(defn numeral->english
   [s]
   (let [length (count s)]
     (cond
@@ -78,7 +78,7 @@
                             (numeral->english right)))))))
 
 (defn int->english
-  [x]
+  [^Integer x]
   (if (zero? x)
     "zero"
     (numeral->english (str x))))

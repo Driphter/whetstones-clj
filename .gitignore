@@ -1,7 +1,9 @@
 #lein
 /target
 /.lein-*
+/.nrepl-*
 
 #idea
 .idea
 *.iml
+
