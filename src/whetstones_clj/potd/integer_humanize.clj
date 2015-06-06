@@ -2,10 +2,15 @@
 ;; http://www.problemotd.com/problem/integer-humanize/
 ;;
 ;; Description:
-;; Today's problem you will hopefully find super useful. It will likely come
-;; in handy in some project for the future. The goal is to convert integers
-;; to their character/language equivalent. Your program should be able to do
-;; up to 999 thousand. For example
+;; Today's problem you will hopefully find super useful. It will likely come in handy in some project for the future.
+;; The goal is to convert integers to their character/language equivalent. Your program should be able to do up to 999
+;; thousand. For example:
+;;
+;; 9 => nine
+;; 245 => two hundred fourty five
+;; 99999 => ninety nine thousand nine hundred
+;;
+;; My examples use English but feel free to use whatever language you are most comfortable with.
 
 (ns whetstones-clj.potd.integer-humanize
   (:require [whetstones-clj.utils :refer :all]))

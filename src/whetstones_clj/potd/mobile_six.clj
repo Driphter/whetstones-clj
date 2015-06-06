@@ -2,9 +2,8 @@
 ;; http://www.problemotd.com/problem/mobile-6/
 ;;
 ;; Description:
-;; Today's goal is to try and find an integer where the digit in the ones
-;; column is a 6 and when the 6 is moved to the front of the number, the
-;; number becomes 4 times the value of the starting number.
+;; Today's goal is to try and find an integer where the digit in the ones column is a 6 and when the 6 is moved to the
+;; front of the number, the number becomes 4 times the value of the starting number.
 
 (ns whetstones-clj.potd.mobile-six
   (:require [whetstones-clj.utils :refer :all]))
