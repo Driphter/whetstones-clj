@@ -17,7 +17,7 @@
                            (subs s 0 (dec digit))
                            (subs s (dec digit) (dec len))))))
 
-(def solution
+(defn solution []
   (->> (range)
        (map #(+ 6 (* 10 %)))
        (filter #(= (* 4 %) (move-digit-to-front 0 %)))

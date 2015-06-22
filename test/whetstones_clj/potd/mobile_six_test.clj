@@ -3,4 +3,4 @@
         whetstones-clj.potd.mobile-six))
 
 (deftest t-solution
-  (is (= solution 153846)))
+  (is (= (solution) 153846)))
