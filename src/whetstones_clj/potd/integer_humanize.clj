@@ -12,8 +12,7 @@
 ;;
 ;; My examples use English but feel free to use whatever language you are most comfortable with.
 
-(ns whetstones-clj.potd.integer-humanize
-  (:require [whetstones-clj.utils :refer :all]))
+(ns whetstones-clj.potd.integer-humanize)
 
 (def ones
   {"0" ""

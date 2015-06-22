@@ -4,8 +4,7 @@
 ;; Description:
 ;; How to randomly pick k numbers between 0 and n such that their sum is n?
 
-(ns whetstones-clj.potd.random-sum
-  (:require [whetstones-clj.utils :refer :all]))
+(ns whetstones-clj.potd.random-sum)
 
 (defn- rand-sum-inclusive*
   [k n]
