@@ -1,4 +1,4 @@
-(ns whetstones-clj.potd.one-hundred-meter-dash
+(ns whetstones-clj.potd.one-hundred-meter-dash-test
   (:use clojure.test
         whetstones-clj.potd.one-hundred-meter-dash))
 
