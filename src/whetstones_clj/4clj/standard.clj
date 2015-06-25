@@ -1,6 +1,9 @@
 (ns whetstones-clj.4clj.standard
   (:use whetstones-clj.4clj.core))
 
+; This is just to resolve the Cursive inspection
+(def __)
+
 (defproblem
   1 "Nothing but the Truth"
   "This is a clojure form. Enter a value which will make the form evaluate to true. Don't over think it! If you are
