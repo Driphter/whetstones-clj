@@ -17,7 +17,7 @@
 (defn filter*
   [pred coll]
   (lazy-seq
-    (when-let [s (seq coll)]
+   (when-let [s (seq coll)]
      (let [x (first s)]
        (if (pred x)
          (cons x (filter* pred (rest s)))

@@ -74,7 +74,7 @@
       (< 3 length) (let [digits (rem length 3)
                          digits (if (zero? digits) 3 digits)
                          left (subs s 0 digits)
-                           right (subs s digits)]
+                         right (subs s digits)]
                      (if (= "000" left)
                        (numeral->english right)
                        (str (numeral->english left)

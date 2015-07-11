@@ -11,9 +11,9 @@
   (if (= 1 k)
     [n]
     (let [r (cond
-             (pos? n) (rand-int (inc n))
-             (neg? n) (rand-int (dec n))
-             :else 0)]
+              (pos? n) (rand-int (inc n))
+              (neg? n) (rand-int (dec n))
+              :else 0)]
       (concat [r] (rand-sum-inclusive* (dec k) (- n r))))))
 
 (defn rand-sum-inclusive
