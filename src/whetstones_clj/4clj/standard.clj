@@ -1,5 +1,5 @@
 (ns whetstones-clj.4clj.standard
-  (:use whetstones-clj.4clj.core))
+  (:require [whetstones-clj.4clj.core :refer [defproblem]]))
 
 ; This is just to resolve the Cursive inspection
 (def __)

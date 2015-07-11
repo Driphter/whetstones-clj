@@ -1,6 +1,6 @@
 (ns whetstones-clj.potd.one-hundred-meter-dash-test
-  (:use clojure.test
-        whetstones-clj.potd.one-hundred-meter-dash))
+  (:require [whetstones-clj.potd.one-hundred-meter-dash :refer :all]
+            [clojure.test :refer :all]))
 
 (deftest t-solution
   (is (= (solution) :sister)))

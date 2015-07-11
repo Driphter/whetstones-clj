@@ -8,18 +8,19 @@
 ;; to the console.
 
 (ns whetstones-clj.potd.irc-bot
+  (:require [clojure.string :as str])
   (:import (java.net Socket)
            (java.io PrintWriter InputStreamReader BufferedReader)))
 
 (defn- write
   [conn & msg]
-  (doto (:out @conn)
-    (.println (apply str (conj msg "\r")))
+  (doto ^PrintWriter (:out @conn)
+    (.println (str/join (conj msg "\r")))
     (.flush)))
 
 (defn- edit-conn
-  [conn key value]
-  (dosync (alter conn assoc key value))
+  [conn k v]
+  (dosync (alter conn assoc k v))
   conn)
 
 (defn- conn-handler

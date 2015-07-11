@@ -1,6 +1,6 @@
 (ns whetstones-clj.potd.integer-humanize-test
-  (:use clojure.test
-        whetstones-clj.potd.integer-humanize))
+  (:require [whetstones-clj.potd.integer-humanize :refer :all]
+            [clojure.test :refer :all]))
 
 (deftest t-int->english
   (is (= "zero" (int->english 0)))

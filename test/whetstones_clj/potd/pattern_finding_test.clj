@@ -1,6 +1,6 @@
 (ns whetstones-clj.potd.pattern-finding-test
-  (:use clojure.test
-        whetstones-clj.potd.pattern-finding))
+  (:require [whetstones-clj.potd.pattern-finding :refer :all]
+            [clojure.test :refer :all]))
 
 (deftest t-find-pattern
   (is (= :arithemtic        (find-pattern [2 4 6])))

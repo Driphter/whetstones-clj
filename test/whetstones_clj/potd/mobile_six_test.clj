@@ -1,6 +1,6 @@
 (ns whetstones-clj.potd.mobile-six-test
-  (:use clojure.test
-        whetstones-clj.potd.mobile-six))
+  (:require [whetstones-clj.potd.mobile-six :refer :all]
+            [clojure.test :refer :all]))
 
 (deftest t-solution
   (is (= (solution) 153846)))
