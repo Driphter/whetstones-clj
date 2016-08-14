@@ -3,7 +3,7 @@
                 programming challenges. I call them my whetstones because they're
                 supposed to keep my skills sharp. :)"
   :url "https://github.com/Driphter/whetstones-clj"
-  :dependencies [[org.clojure/clojure "1.6.0"]]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha10"]]
   :global-vars {*warn-on-reflection* true}
   :eastwood {:exclude-linters [:constant-test]}
   :aliases {"omni" ["do"
@@ -14,7 +14,7 @@
                     ["eastwood"]
                     ["kibit"]
                     ["bikeshed"]]}
-  :plugins [[lein-kibit "0.1.2"]
-            [lein-cljfmt "0.2.0"]
-            [jonase/eastwood "0.2.1"]
-            [lein-bikeshed "0.2.0"]])
+  :plugins [[lein-kibit "0.1.2" :exclusions [org.clojure/clojure]]
+            [lein-cljfmt "0.5.3" :exclusions [org.clojure/clojure]]
+            [jonase/eastwood "0.2.3"]
+            [lein-bikeshed "0.3.0"]])

@@ -26,7 +26,7 @@
 (defn- conn-handler
   [conn]
   (while (not (:exit @conn))
-    (let [msg (.readLine (:in @conn))]
+    (let [msg (.readLine ^BufferedReader (:in @conn))]
       (cond
         (re-find #"^:[^ ]* 004" msg)
         (edit-conn conn :connected true)
@@ -64,7 +64,7 @@
         (edit-conn conn :exit true)))))
 
 (defn- sanitize-channel
-  [channel]
+  [^String channel]
   (if-not (.startsWith channel "#")
     (str "#" channel)
     channel))

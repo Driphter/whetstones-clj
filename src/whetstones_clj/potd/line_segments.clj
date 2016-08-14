@@ -9,7 +9,8 @@
 
 (ns whetstones-clj.potd.line-segments
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]))
+            [clojure.string :as str])
+  (:import (java.io File)))
 
 (defn ls
   ([]
@@ -19,6 +20,6 @@
      (if-not (and (.exists file) (.isDirectory file))
        (println "Invalid directory")
        (->> (.listFiles file)
-            (map #(.getName %))
+            (map #(.getName ^File %))
             (str/join " ")
             println)))))
