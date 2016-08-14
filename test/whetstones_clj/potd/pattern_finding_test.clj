@@ -3,7 +3,7 @@
             [clojure.test :refer :all]))
 
 (deftest t-find-pattern
-  (is (= :arithemtic        (find-pattern [2 4 6])))
+  (is (= :arithmetic        (find-pattern [2 4 6])))
   (is (= :geometric         (find-pattern [8 4 2])))
   (is (= :plus-one-increase (find-pattern [2 4 7 11])))
   (is (= :no-pattern        (find-pattern [1 1 1])))
